@@ -1,0 +1,38 @@
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+header{
+    background-color: #1e1e1e;
+    width:100%;
+    padding-bottom: 10px;
+}
+
+img.head-watch{
+    height:auto;
+    width:80%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+section.block-two{
+    background-color: aqua;
+    width: 100%;
+    padding-top:50px;
+    padding-bottom: 50px;
+
+}
+
+.block-circle{
+    display: block;
+    margin-right:auto;
+    margin-left: auto;
+
+    height:130px;
+    width:130px;
+    border-radius: 50%;
+    background-color:green;
+}

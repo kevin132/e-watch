@@ -4,13 +4,38 @@ html,body{
     height:100%;
 }
 
+.watch-video{
+    margin-bottom: -70px;
+    z-index: 2;
+}
+
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar{
+    background-color:black;
+    top:0;
+    right:0;
+    width:100%;
+}
+
 header{
+    padding-top: 10px;
     background-color: #1e1e1e;
     width:100%;
     padding-bottom: 10px;
 }
 
 img.head-watch{
+    z-index:1;
     height:auto;
     width:80%;
     background-attachment: fixed;
@@ -19,7 +44,7 @@ img.head-watch{
 
 
 section.block-two{
-    background-color: aqua;
+    background-color: #111111;
     width: 100%;
     padding-top:50px;
     padding-bottom: 50px;

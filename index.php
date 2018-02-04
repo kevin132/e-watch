@@ -14,10 +14,10 @@
 </head>
 <body>
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4AjdAObqC74" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-lg  navbar-dark fixed-top  no-gutters">
      <ul class="navbar-nav">
           <li class="nav-item active">
-               <a class="nav-link" href="#">Active</a>
+               <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
                <a class="nav-link" href="#">Link</a>
@@ -30,6 +30,12 @@
           </li>
      </ul>
 </nav>
+
+<video autoplay  class="watch-video"  style="width:100%;
+    height: 695px;
+    margin-top:-40px;" controls loop>
+     <source src="e-watch.mp4" type="video/mp4">
+</video>
 <header>
      <div class="row">
           <div class="col-lg-5"></div>
@@ -59,5 +65,11 @@
 </section>
 
 
+<script>
+    var vids = $("video");
+    $.each(vids, function(){
+        this.controls = false;
+    });
+</script>
 </body>
 </html>

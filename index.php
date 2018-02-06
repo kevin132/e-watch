@@ -33,8 +33,6 @@
 
      <video class="watch-video" autoplay="autoplay" loop muted data-setup="{}" >
           <source src="assets/video/e-watch.mp4" type="video/mp4"/>
-          <source src="assets/video/e-watch.ogg" type="video/ogg; codecs=theora, vorbis"/>
-          <source src="assets/video/e-watch.webm" type="video/webm; codecs=vp8, vorbis"/>
           Your browser does not support the HTML5 video tag. Try updating your browser or using a different one.
      </video>
 

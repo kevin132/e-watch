@@ -41,6 +41,27 @@ html, body {
     right: 0;
     width: 100%;
 }
+li.nav-item{
+    padding: 12px;
+}
+
+.nav-ctn-bar {
+    position: absolute;
+    right:20px;
+    top:15px;
+
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-ctn-line{
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px;
+}
+
+
 
 /* header */
 header {
@@ -126,9 +147,15 @@ section#block-parallaxe {
 }
 
 .img-paralaxe-block {
-    background: url("../images/img-paralaxe.png");
+    background: url("../images/img-paralaxe.png") no-repeat fixed;
     height: 500px;
     width: 100%;
+}
+.img-paralaxe-two {
+    background: url("../images/img-paralaxe-two.jpg") no-repeat fixed;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
 }
 
 section#block-four {
@@ -143,5 +170,5 @@ section#block-four {
 
 .block-four-child-two {
     background-color: #111111;
-    height: 300px;
+
 }

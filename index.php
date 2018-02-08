@@ -6,27 +6,30 @@
            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>e-watch</title>
-     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-     <link rel="stylesheet" href="assets/css/style.css">
-     <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+     <link rel="stylesheet" href="assets/css/style.css"/>
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+     <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css"/>
 </head>
 
 <body>
 
-<!-- navbar -->
+<!-- nav bar -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-inner">
      <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
                <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-               <a class="nav-link" href="#">Link</a>
+               <a class="nav-link" href="#">Model</a>
           </li>
           <li class="nav-item">
-               <a class="nav-link" href="#">Link</a>
+               <a class="nav-link" href="#">Pages</a>
           </li>
           <li class="nav-item">
-               <a class="nav-link disabled" href="#">Disabled</a>
+               <a class="nav-link" href="#">Brands</a>
+          </li>
+          <li class="nav-item">
+               <a class="nav-link" href="#">About</a>
           </li>
      </ul>
      <ul class="navbar-nav mr-auto">
@@ -41,11 +44,18 @@
 </nav>
 <!--end navbar-->
 
-<video class="watch-video" autoplay="autoplay" loop muted data-setup="{}">
-     <source src="assets/video/e-watch.mp4" type="video/mp4"/>
-     Your browser does not support the HTML5 video tag. Try updating your browser or using a different one.
-</video>
+<!--header -->
+<header>
+     <section id="home-video" class="home-demo">
+          <video class="watch-video" autoplay="autoplay" loop muted data-setup="{}">
+               <source src="assets/video/e-watch.mp4" type="video/mp4"/>
+               Your browser does not support the HTML5 video tag. Try updating your browser or using a different one.
+          </video>
+          <a href="#home-first"><span></span></a>
+     </section>
 
+</header>
+<!-- end header -->
 <section id="home-info">
      <div class="container">
           <ul class="home-info-select">
@@ -57,8 +67,8 @@
 </section>
 
 
-<!--header -->
-<header>
+
+<section id="home-first">
      <div class="row no-gutters">
           <div class="col-lg-6 text-center">
                <img src="assets/images/watch.png" class="head-watch" alt="watch"/>
@@ -73,8 +83,7 @@
                </a>
           </div>
      </div>
-</header>
-<!-- end header -->
+</section>
 
 
 <!-- second block -->
@@ -107,16 +116,37 @@
 </section>
 <!-- end second block -->
 
-
 <!--collection -->
 <section id="block-three">
-     <h2 class="block-three-title text-center pt-4">Montre Collection</h2>
-
+     <h2 class="block-three-title text-center pt-4">Watch Collection</h2>
+     <div class="row no-gutters">
+          <div class="col-lg-2">
+               <img src="assets/images/watch-tag.png" class="home-model-watch" alt="watch tag-heuer">
+          </div>
+          <div class="col-lg-2">
+               <img src="assets/images/watch-tag2.png" class="home-model-watch" alt="watch tag-heuer">
+          </div>
+          <div class="col-lg-2">
+               <img src="assets/images/watch-tag3.png" class="home-model-watch" alt="watch tag-heuer">
+          </div>
+          <div class="col-lg-2">
+               <img src="assets/images/watch-tag.png" class="home-model-watch" alt="watch tag-heuer">
+          </div>
+          <div class="col-lg-2">
+               <img src="assets/images/watch-tag2.png" class="home-model-watch" alt="watch tag-heuer">
+          </div>
+          <div class="col-lg-2">
+               <img src="assets/images/watch-tag3.png" class="home-model-watch" alt="watch tag-heuer">
+          </div>
+     </div>
+     <a href="">
+          <button class="three-button">View More</button>
+     </a>
 </section>
 <!--end collection-->
 
 
-<!-- parallaxe block -->
+<!-- parallax block -->
 <section id="block-parallaxe">
      <div class="row no-gutters">
           <div class="col-lg-6">
@@ -135,17 +165,31 @@
                     </h2>
                </div>
           </div>
-
           <div class="col-lg-6">
+               <div class="img-paralaxe-two"></div>
+          </div>
+     </div>
+</section>
+<!--  end parallax block -->
 
-                    <div class="img-paralaxe-two"></div>
+<section id="home-men-ad">
+     <div class="row no-gutters">
+          <div class="col-lg-6">
+               <img src="assets/images/dicaprio.jpg" class="home-men-ad" alt="">
+          </div>
+          <div class="col-lg-6">
 
           </div>
      </div>
 </section>
-<!--  end parallaxe block -->
 
+<footer>
 
+</footer>
+
+<script>
+
+</script>
 <!--javascript -->
 <script type="text/javascript" src="assets/javascript/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/javascript/app.js"></script>

@@ -33,14 +33,28 @@ html, body {
 }
 
 .navbar {
-    background-color: #111111;
+    background-color:#111111;
     top: 0;
     right: 0;
     width: 100%;
+
+
+
+
+}
+.navbar:hover{
+    background-color:#111111;
+    transition:0.5s;
 }
 
+
 li.nav-item {
-    padding: 10px;
+padding: 10px;
+}
+
+.show {
+    transition: 1s;
+    background-color:grey;
 }
 
 .nav-ctn-bar {
@@ -129,10 +143,11 @@ section#home-video a span {
 section#home-first{
     padding-top: 10px;
     background-color: #1e1e1e;
-    width: 100%;
     padding-bottom: 10px;
     color: #ffffff;
 }
+
+
 
 img.head-watch {
     z-index: 1;
@@ -141,25 +156,26 @@ img.head-watch {
     background-size: cover;
 }
 
-.head-button {
+
+button.head-button {
     padding: 10px 30px 10px 30px;
+    border: 1px solid #ffffff ;
+    background-color:#1e1e1e;
     border-radius: 5px;
-    border: none;
-    outline: none;
-    background-color: #ffffff;
-    color: #111111;
+    color:#ffffff;
     cursor: pointer;
 }
-
+button.head-button:hover{
+    background-color:#ffffff;
+    color: #111111;
+    transition:0.4s;
+}
 button.head-button:focus {
     outline: none;
 }
 
-
-
 section#home-info {
     height: 50px;
-    width: 100%;
     background-color: #ffffff;
 }
 
@@ -177,11 +193,12 @@ li.home-info-list {
 
 }
 
-section#block-two {
+/*block dial*/
+section#block-dial {
     background-color: #111111;
-    width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    color:#ffffff;
 
 }
 
@@ -195,12 +212,20 @@ section#block-two {
     background-color: #ffffff;
 }
 
+/*end block dial*/
+
+/* block category*/
+
+
+
+
+/*end block category*/
+
 section#block-three {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 10px;
     width: 100%;
     background-color: #1e1e1e;
     color: #ffffff;
@@ -210,14 +235,23 @@ section#block-three {
 button.three-button{
     border: 1px solid #ffffff ;
     background-color:#1e1e1e;
-    outline: none;
     border-radius: 5px;
-    padding:10px;
+    padding: 10px 40px 10px 40px;
     color:#ffffff;
+    cursor: pointer;
 }
+button.three-button:hover{
+    background-color:#ffffff;
+    color: #111111;
+    transition:0.4s;
+
+}
+
+
 button.three-button:focus {
 outline: none;
 }
+
 .home-model-watch {
     width: 100%;
 }
@@ -227,17 +261,17 @@ section#block-parallaxe {
 }
 */
 
-.img-paralaxe-block {
+.img-parallax-block {
     background: url("../images/img-paralaxe.png") no-repeat fixed;
-    height: 500px;
+    height: 325px;
     width: 100%;
     background-size: cover;
 
 }
 
-.img-paralaxe-two {
+.img-parallax-two {
     background: url("../images/img-paralaxe-two.jpg") no-repeat fixed;
-    height: 500px;
+    height: 324px;
     width: 100%;
     background-size: cover;
 }
@@ -258,10 +292,67 @@ section#block-four {
 
 section#home-men-ad {
     background-color: #111111;
-    padding-bottom:0;
+    padding-top:100px;
+    padding-bottom:50px;
     width: 100%;
+}
+
+.b-para-img{
+    background: url("../images/couple.jpg") no-repeat;
+
+    width: 100%;
+    height:100%;
+    z-index: 3;
+
+}
+.b-para-img-two{
+    background: url("../images/dicaprio.jpg") no-repeat;
+    width: 100%;
+    height:110%;
+    z-index: 3;
+
 }
 
 img.home-men-ad{
     width: 100%;
+}
+
+section#home-news{
+    padding-top:40px;
+    background: url("../images/black-pattern.png");
+    padding-bottom: 50px;
+}
+
+h2.home-news-title{
+    text-transform: uppercase;
+    color:#ffffff;
+    padding-bottom:30px;
+}
+input.home-news-ipt{
+    height:50px;
+    width:300px;
+    border-radius: 2px;
+    font-size: 30px;
+    background-color: transparent;
+    border:1px solid #ffffff;
+    color:#ffffff;
+}
+input.home-news-ipt:focus{
+    outline: none;
+}
+
+
+.home-news-img{
+    position: absolute;
+    top:0;
+    opacity: 0.8;
+    width:100%;
+    z-index: -1;
+}
+
+input.home-news-submit{
+    background-color:transparent;
+    border:1px solid lightgray;
+    color:lightgray;
+
 }

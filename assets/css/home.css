@@ -43,9 +43,6 @@ html, body {
     background-color: #111111;
 
 }
-
-
-
 .home-icon{
     color:#fff;
     margin:30px;
@@ -70,48 +67,7 @@ li.nav-item {
     margin: 6px;
 }
 
-/*
 
-ul {
-    margin:0;
-    padding:0;
-    text-decoration:none;
-    list-style:none;
-}
-li {
-    padding:0;
-    margin:0;
-}
-nav {
-    text-align:center;
-    width:100%;
-    position:relative;
-    height:auto;
-    overflow:hidden;
-    background:none;
-}
-nav ul {
-    text-align:center;
-}
-nav ul li {
-    display:inline-block;
-}
-nav ul li a {
-    color:#333;
-    display:inline-block;
-    padding:1em 3em;
-    text-decoration:none;
-    border-bottom:2px solid #fff;
-    transition-property:all .2s linear 0s;
-    -moz-transition:all .2s linear 0s;
-    -webkit-transition:all .2s linear 0s;
-    -o-transition:all .2s linear 0s;
-    font-size:16px;
-}
-nav ul li a:hover {
-    color: #34B484;
-}
-/*styling open close button*/
 .button {
     padding: 10px;
     display: inline-block;
@@ -128,7 +84,7 @@ nav ul li a:hover {
     color:#ffffff;
     content:"\f0c9";
     font-family:"FontAwesome";
-    transition-property:all .2s linear 0s;
+    transition-property:all;
     -moz-transition:all .2s linear 0s;
     -webkit-transition:all .2s linear 0s;
     -o-transition:all .2s linear 0s;
@@ -141,7 +97,7 @@ nav ul li a:hover {
     color:#fff;
     content:"\f00d";
     font-family:"FontAwesome";
-    transition-property:all 0.2s linear 0s;
+    transition-property:all;
     -moz-transition:all .2s linear 0s;
     -webkit-transition:all .2s linear 0s;
     -o-transition:all .2s linear 0s;
@@ -151,13 +107,16 @@ nav ul li a:hover {
 }
 /*overlay*/
 .overlay {
-
     display:none;
     position:fixed;
     top:0;
     height:100%;
     width:100%;
-    background:#333;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+    ),url('../images/watch-background.jpg') no-repeat ;
+    background-size: 100% 100%;
     overflow:hidden;
     z-index:99;
 }
@@ -171,7 +130,7 @@ nav ul li a:hover {
 .wrap ul.wrap-nav {
     border-bottom:1px solid #575757;
     text-transform:capitalize;
-    padding:150px 0px 100px;
+    padding:150px 0 100px;
 }
 .wrap ul.wrap-nav li {
     font-size:20px;
@@ -185,7 +144,7 @@ nav ul li a:hover {
     display:block;
     padding:8px 0;
     text-decoration:none;
-    transition-property:all .2s linear 0s;
+    transition-property:all ;
     -moz-transition:all .2s linear 0s;
     -webkit-transition:all .2s linear 0s;
     -o-transition:all .2s linear 0s;
@@ -232,6 +191,8 @@ nav ul li a:hover {
 .social-icon i {
     margin-top:12px;
 }
+
+
 
 /* video*/
 video.watch-video {
@@ -319,7 +280,7 @@ img.head-watch {
 button.head-button {
     padding: 10px 30px 10px 30px;
     border: 1px solid #ffffff ;
-    background-color:#1e1e1e;
+    background-color:transparent;
     border-radius: 5px;
     color:#ffffff;
     cursor: pointer;
@@ -449,10 +410,10 @@ section#block-four {
 
 section#home-men-ad {
     background-color: #111111;
-    padding-top:100px;
-    padding-bottom:50px;
+    padding-bottom:150px;
     width: 100%;
 }
+
 
 .b-para-img{
     background: url("../images/couple.jpg") no-repeat;

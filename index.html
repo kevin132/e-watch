@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="assets/javascript/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="assets/javascript/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/javascript/fontawesome-all.min.js"></script>
 </head>
 
@@ -40,6 +40,7 @@
             </div>
         </li>
     </ul>
+
     <ul class="navbar-nav">
         <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
@@ -261,7 +262,13 @@
                     <div class="col-6"></div>
                     <div class="col-6">
                         <h2 class="prl-title mb-4">Men's watches</h2>
-                        <h3 class="prl-sub">wear your style <br> with verve & attitude</h3>
+                        <h3 class="prl-sub">
+                            smart watches <br>  latest fashion statement
+
+                        </h3>
+                        <a href="">
+                            <button class="head-button ml-5 mt-4">View More</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -277,6 +284,9 @@
                     <div class="col-6">
                         <h2 class="prl-title mb-4">Ladies' watches</h2>
                         <h3 class="prl-sub">wear your style<br> with verve & attitude</h3>
+                        <a href="">
+                            <button class="head-button ml-5 mt-4">View More</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -287,19 +297,54 @@
     </div>
 </section>
 <!--  end parallax block -->
-
 <section id="home-men-ad">
+
+    <h2 class="home-news-title text-center pt-5">Latest News</h2>
+
+    <!--will replace by foreach php here-->
+<div class="container">
     <div class="row no-gutters">
-        <div class="col-lg-6">
-            <img src="assets/images/dicaprio.jpg" class="home-men-ad" alt="">
+        <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6"></div>
+        <div class="col-lg-4">
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 </section>
 
 <!-- home newsletters -->
 <section id="home-news">
-    <h2 class="home-news-title text-center pt-5">subscribe to our newsletter</h2>
+    <h2 class="home-news-title text-center pt-4">subscribe to our newsletter</h2>
     <form action="index.html" class="text-center">
         <label for="email">
             <input type="email" name="email" id="email" class="home-news-ipt text-center" placeholder="E-mail"/>

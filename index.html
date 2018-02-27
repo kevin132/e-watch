@@ -18,12 +18,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>e-watch</title>
-
+    <!-- style-->
     <link rel="stylesheet" href="assets/css/home.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--javascript-->
     <script type="text/javascript" src="assets/javascript/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/javascript/fontawesome-all.min.js"></script>
 </head>
@@ -40,7 +41,6 @@
             </div>
         </li>
     </ul>
-
     <ul class="navbar-nav">
         <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
@@ -65,6 +65,7 @@
         </li>
     </ul>
 </nav>
+
 <div class="overlay">
     <div class="wrap">
         <ul class="wrap-nav">
@@ -98,9 +99,8 @@
 </div>
 <!--end nav-bar-->
 
+
 <!--header-->
-
-
 <header>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -113,7 +113,6 @@
                     </video>
                     <a href="#home-first"><span></span></a>
                 </section>
-
             </div>
             <div class="carousel-item">
                 <video class="watch-video" autoplay loop muted data-setup="{}">
@@ -122,7 +121,6 @@
                     one.
                 </video>
             </div>
-
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -135,6 +133,8 @@
     </div>
 </header>
 <!-- end header -->
+
+
 <section id="home-info">
     <div class="container">
         <ul class="home-info-select">
@@ -165,7 +165,7 @@
     </div>
 </section>
 
-<!-- second block -->
+<!--block dial -->
 <section id="block-dial">
     <h2 class="block-two-title text-center pt-4 pb-5">Choose Your Dial</h2>
     <div class="container">
@@ -198,31 +198,28 @@
 
 <!--collection -->
 <section class="block-three d-flex justify-content-center align-items-center flex-column">
-
     <h3 class="block-three-title  text-center pt-4">Watch Collection</h3>
     <h2 class="collection-subtitle text-center">Tag Heure</h2>
     <div class="row no-gutters">
         <div class="col-lg-2">
-            <img src="assets/images/watch-tag.png" class="home-model-watch" alt="watch tag-heuer">
+            <img src="assets/images/watch-tag.png" class="home-model-watch" alt="watch tag-heuer"/>
         </div>
         <div class="col-lg-2">
-            <img src="assets/images/watch-tag2.png" class="home-model-watch" alt="watch tag-heuer">
+            <img src="assets/images/watch-tag2.png" class="home-model-watch" alt="watch tag-heuer"/>
         </div>
         <div class="col-lg-2">
-            <img src="assets/images/watch-tag3.png" class="home-model-watch" alt="watch tag-heuer">
+            <img src="assets/images/watch-tag3.png" class="home-model-watch" alt="watch tag-heuer"/>
         </div>
         <div class="col-lg-2">
-            <img src="assets/images/watch-tag.png" class="home-model-watch" alt="watch tag-heuer">
+            <img src="assets/images/watch-tag.png" class="home-model-watch" alt="watch tag-heuer"/>
         </div>
         <div class="col-lg-2">
-            <img src="assets/images/watch-tag2.png" class="home-model-watch" alt="watch tag-heuer">
+            <img src="assets/images/watch-tag2.png" class="home-model-watch" alt="watch tag-heuer"/>
         </div>
         <div class="col-lg-2">
-            <img src="assets/images/watch-tag3.png" class="home-model-watch" alt="watch tag-heuer">
+            <img src="assets/images/watch-tag3.png" class="home-model-watch" alt="watch tag-heuer"/>
         </div>
-
     </div>
-
     <button class="three-button">View More</button>
 </section>
 
@@ -262,10 +259,7 @@
                     <div class="col-6"></div>
                     <div class="col-6">
                         <h2 class="prl-title mb-4">Men's watches</h2>
-                        <h3 class="prl-sub">
-                            smart watches <br>  latest fashion statement
-
-                        </h3>
+                        <h3 class="prl-sub text-uppercase">smart watches <br> latest fashion statement</h3>
                         <a href="">
                             <button class="head-button ml-5 mt-4">View More</button>
                         </a>
@@ -283,7 +277,7 @@
                     <div class="col-6"></div>
                     <div class="col-6">
                         <h2 class="prl-title mb-4">Ladies' watches</h2>
-                        <h3 class="prl-sub">wear your style<br> with verve & attitude</h3>
+                        <h3 class="prl-sub text-uppercase">wear your style<br> with verve & attitude</h3>
                         <a href="">
                             <button class="head-button ml-5 mt-4">View More</button>
                         </a>
@@ -298,53 +292,53 @@
 </section>
 <!--  end parallax block -->
 <section id="home-men-ad">
-
-    <h2 class="home-news-title text-center pt-5">Latest News</h2>
-
+    <h2 class="home-blog-title text-center pt-5">Latest News</h2>
     <!--will replace by foreach php here-->
-<div class="container">
-    <div class="row no-gutters">
-        <div class="col-lg-4">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="col-lg-4">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-lg-4 text-center">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="" alt="Card image cap">
+                    <img class="card-img-top" src="assets/images/news2.jpg" alt="Card image cap"/>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                        </p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4">
             <div class="col-lg-4">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="" alt="Card image cap">
+                    <img class="card-img-top" src="assets/images/news.jpg" alt="Card image cap"/>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/images/news3.jpg" alt="Card image cap"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.
+                        </p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </section>
 
 <!-- home newsletters -->
 <section id="home-news">
-    <h2 class="home-news-title text-center pt-4">subscribe to our newsletter</h2>
+    <h2 class="home-news-title text-center pt-4 text-uppercase">subscribe to our newsletter</h2>
     <form action="index.html" class="text-center">
         <label for="email">
             <input type="email" name="email" id="email" class="home-news-ipt text-center" placeholder="E-mail"/>
@@ -355,11 +349,42 @@
 
 <!-- end home newsletters -->
 
-
 <!-- footer-->
 <footer>
     <div class="container">
         <div class="row">
+            <div class="col-lg-3">
+                <ul class="list-group">
+                    <li class="list-group-item">ABOUT US</li>
+                    <li class="list-group-item">CAREERS</li>
+                    <li class="list-group-item">PRESS</li>
+                    <li class="list-group-item">PROFESSIONAL TIMING</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="list-group">
+                    <li class="list-group-item">ABOUT US</li>
+                    <li class="list-group-item">CAREERS</li>
+                    <li class="list-group-item">PRESS</li>
+                    <li class="list-group-item">PROFESSIONAL TIMING</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="list-group">
+                    <li class="list-group-item">ABOUT US</li>
+                    <li class="list-group-item">CAREERS</li>
+                    <li class="list-group-item">PRESS</li>
+                    <li class="list-group-item">PROFESSIONAL TIMING</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="list-group">
+                    <li class="list-group-item">ABOUT US</li>
+                    <li class="list-group-item">CAREERS</li>
+                    <li class="list-group-item">PRESS</li>
+                    <li class="list-group-item">PROFESSIONAL TIMING</li>
+                </ul>
+            </div>
         </div>
     </div>
 </footer>

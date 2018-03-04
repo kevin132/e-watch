@@ -13,3 +13,10 @@ $('.overlay').on('click', function(){
 });
 
 
+$(window).scroll(function() {
+    if ($(document).scrollTop() >580) {
+        $('.navbar').addClass('color-change');
+    } else {
+        $('.navbar').removeClass('color-change');
+    }
+});

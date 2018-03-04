@@ -1,12 +1,11 @@
 
 html, body {
+    background-color: #111111;
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: "kirvy-rgl", sans-serif;
-
 }
-
 @font-face {
     font-family: "kirvy-rgl";
     src: url("../font/Kirvy-Regular.otf") format("otf"),
@@ -21,7 +20,6 @@ html, body {
 }
 
 /* delete gutters */
-
 .row.no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -37,12 +35,69 @@ html, body {
     top: 0;
     right: 0;
     width: 100%;
+    height:80px;
+}
+
+.navbar .active a.nav-link{
+    font-weight: bold;
+}
+.navbar .nav-item a.nav-link{
+ color:#43bcb2;
+}
+
+.navbar:hover{
+    background-color:#ffffff;
+    -webkit-transition:0.5s;
+    transition: 0.5s;
+    -moz-transition:0.5s;
+}
+.navbar:hover .nav-item a.nav-link{
+    color:#111111;
+    -webkit-transition:0.5s;
+    transition: 0.5s;
+    -moz-transition:0.5s;
+
 
 }
-.navbar-black{
-    background-color: #111111;
+.navbar:hover  .active a.nav-link{
+    color:#111111;
+    -webkit-transition:0.5s;
+    transition: 0.5s;
+    -moz-transition:0.5s;
+}
+
+.navbar:hover .btn-open:after{
+    color:#111111;
+    -webkit-transition:0.5s;
+    transition: 0.5s;
+    -moz-transition:0.5s;
+}
+
+.navbar:hover .btn-close:after{
+    color:#111111;
+    -webkit-transition:0.5s;
+    transition: 0.5s;
+    -moz-transition:0.5s;
+}
+.navbar:hover .nav-item .home-icon{
+    color:#111111;
 
 }
+
+.navbar.color-change {
+    background-color: #000000;
+    color:#ffffff;
+    height:80px;
+    -webkit-transition:0.5s;
+    transition: 0.5s;
+    -moz-transition:0.5s;
+
+}
+.navbar.color-change a.nav-link{
+   display:none;
+
+}
+
 .home-icon{
     color:#fff;
     margin:30px;
@@ -52,21 +107,6 @@ html, body {
 li.nav-item {
     padding: 10px;
 }
-
-
-.nav-ctn-bar {
-    padding: 10px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.nav-ctn-line {
-    width: 25px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 6px;
-}
-
 
 .button {
     padding: 10px;
@@ -83,7 +123,7 @@ li.nav-item {
 .btn-open:after {
     color:#ffffff;
     content:"\f0c9";
-    font-family:"FontAwesome";
+    font-family:"FontAwesome",sans-serif;
     transition-property:all;
     -moz-transition:all .2s linear 0s;
     -webkit-transition:all .2s linear 0s;
@@ -96,7 +136,7 @@ li.nav-item {
 .btn-close:after {
     color:#fff;
     content:"\f00d";
-    font-family:"FontAwesome";
+    font-family:'FontAwesome',sans-serif;
     transition-property:all;
     -moz-transition:all .2s linear 0s;
     -webkit-transition:all .2s linear 0s;
@@ -113,11 +153,11 @@ li.nav-item {
     height:100%;
     width:100%;
     background: linear-gradient(
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
-    ),url('../images/watch-background.jpg') no-repeat ;
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+        ),url('../images/watch-background.jpg') no-repeat;
     background-size: 100% 100%;
-    overflow:hidden;
+    overflow-y:hidden;
     z-index:99;
 }
 .wrap {
@@ -167,31 +207,6 @@ li.nav-item {
 .wrap ul.wrap-nav ul li a:hover {
     color:#34B484;
 }
-.social {
-    font-size:25px;
-    padding:20px;
-}
-.social p {
-    margin:0;
-    padding:20px 0 5px 0;
-    line-height:30px;
-    font-size:13px;
-}
-.social p a {
-    color:#34B484;
-    text-decoration:none;
-    margin:0;
-    padding:0;
-}
-
-.social-icon:hover {
-    background:#34B484;
-    color:#f0f0f0;
-}
-.social-icon i {
-    margin-top:12px;
-}
-
 /* video*/
 video.watch-video {
     width: 100%;
@@ -200,7 +215,7 @@ video.watch-video {
 
 .home-demo a {
     position: absolute;
-    bottom: 20px;
+    bottom: 100px;
     left: 50%;
     z-index: 2;
     display: inline-block;
@@ -407,8 +422,8 @@ section#block-four {
 }
 
 section#home-men-ad {
-    background-color: #ffffff;
-    padding-bottom:150px;
+    background-color: #43bcb2;
+    padding-bottom: 150px;
     width: 100%;
 }
 
@@ -488,4 +503,11 @@ footer{
     padding-top:200px;
     background-color: #000000;
     padding-bottom: 200px;
+    color:#fff;
+}
+
+
+li.list-group-item{
+    border:none;
+    background-color: #000000;
 }

@@ -84,7 +84,7 @@ html, body {
 
 }
 
-.navbar.color-change {
+.color-change {
     background-color: #000000;
     color:#ffffff;
     height:80px;

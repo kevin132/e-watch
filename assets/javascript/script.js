@@ -19,4 +19,10 @@ $(window).scroll(function() {
     } else {
         $('.navbar').removeClass('color-change');
     }
+
+    /*
+    if ($(document).scrollTop() <580) {
+
+
+    }*/
 });

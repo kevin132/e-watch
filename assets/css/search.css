@@ -1,0 +1,15 @@
+
+
+.ctn-search{
+    padding-top: 180px;
+    padding-bottom: 180px;
+
+}
+.ctn-input{
+    width:300px;
+
+}
+.ctn-input:focus{
+    outline: none;
+}
+

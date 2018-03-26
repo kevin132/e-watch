@@ -37,3 +37,4 @@
     </div>
 </footer>
 <!-- end footer-->
+<script src="../assets/javascript/script.js"></script>

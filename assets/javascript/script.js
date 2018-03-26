@@ -13,6 +13,8 @@ $('.overlay').on('click', function(){
 });
 
 
+
+
 $(window).scroll(function() {
     if ($(document).scrollTop() >580) {
         $('.navbar').addClass('color-change');
@@ -20,9 +22,21 @@ $(window).scroll(function() {
         $('.navbar').removeClass('color-change');
     }
 
-    /*
-    if ($(document).scrollTop() <580) {
 
-
-    }*/
 });
+
+/*
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos >100) {
+       document.querySelector(".navbar").style.top = "0";
+    } else {
+        document.querySelector(".navbar").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+}
+
+*/
+
+

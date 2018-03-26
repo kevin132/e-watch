@@ -1,0 +1,15 @@
+footer{
+
+    background-color: #111111;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color:#fff;
+    width: 100%;
+
+}
+
+
+li.list-group-item{
+    border:none;
+    background-color: #111111;
+}

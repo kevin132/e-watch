@@ -8,6 +8,9 @@
 #notes            : Support all browsers except internet explorer
 ============================================================================-->
 
+
+<?php require_once 'tools/common.php'; ?>
+
 <!Doctype html>
 <html lang="en">
 <head>
@@ -15,18 +18,16 @@
      <meta name="viewport"
            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
      <title>e-watch</title>
      <!-- style-->
-     <link rel="stylesheet" href="assets/css/home.css"/>
+     <link rel="stylesheet" href="assets/css/home.css">
      <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
      <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css"/>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
      <!--javascript-->
      <script type="text/javascript" src="assets/javascript/jquery-3.3.1.min.js"></script>
      <script type="text/javascript" src="assets/javascript/fontawesome-all.min.js"></script>
 </head>
-
 
 <body>
 
@@ -36,23 +37,6 @@
                <div class="button">
                     <a class="btn-open" href="#"></a>
                </div>
-          </li>
-     </ul>
-     <ul class="navbar-nav">
-          <li class="nav-item active">
-               <a class="nav-link" href="index.php">Home</a>
-          </li>
-          <li class="nav-item">
-               <a class="nav-link" href="#">Model</a>
-          </li>
-          <li class="nav-item">
-               <a class="nav-link" href="#">Pages</a>
-          </li>
-          <li class="nav-item">
-               <a class="nav-link" href="#">Brands</a>
-          </li>
-          <li class="nav-item">
-               <a class="nav-link" href="#">About</a>
           </li>
      </ul>
      <ul class="navbar-nav ml-auto ">
@@ -89,12 +73,8 @@
                     </div>
                </div>
           </li>
-     </ul><!--
-     <li class="nav-item active">
-
-     </li>-->
+     </ul>
 </nav>
-
 <div class="overlay">
      <div class="wrap">
           <ul class="wrap-nav">
@@ -126,234 +106,294 @@
 
      </div>
 </div>
-
-<header>
-     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-               <div class="carousel-item active">
-                    <section id="home-video" class="home-demo">
+<main>
+     <header>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <section id="home-video" class="home-demo">
+                              <video class="watch-video" autoplay loop muted data-setup="{}">
+                                   <source src="assets/video/tag-heuer.mp4" type="video/mp4"/>
+                                   Your browser does not support the HTML5 video tag. Try updating your browser or using
+                                   a
+                                   different one.
+                              </video>
+                              <a class="nav-link js-scroll-trigger" href="#home-first"><span></span></a>
+                         </section>
+                    </div>
+                    <div class="carousel-item">
                          <video class="watch-video" autoplay loop muted data-setup="{}">
-                              <source src="assets/video/tag-heuer.mp4" type="video/mp4"/>
+                              <source src="assets/video/e-watch.mp4" type="video/mp4"/>
                               Your browser does not support the HTML5 video tag. Try updating your browser or using a
                               different one.
                          </video>
-                         <a href="#home-first"><span></span></a>
-                    </section>
+                    </div>
                </div>
-               <div class="carousel-item">
-                    <video class="watch-video" autoplay loop muted data-setup="{}">
-                         <source src="assets/video/e-watch.mp4" type="video/mp4"/>
-                         Your browser does not support the HTML5 video tag. Try updating your browser or using a
-                         different
-                         one.
-                    </video>
-               </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="sr-only">Next</span>
-          </a>
-     </div>
-</header>
-<!-- end header -->
-
-<section id="home-info">
-     <div class="container">
-          <ul class="home-info-select">
-               <li class="home-info-list">collection</li>
-               <li class="home-info-list">watch</li>
-               <li class="home-info-list">hello</li>
-          </ul>
-     </div>
-</section>
-
-<section id="home-first">
-     <div class="row no-gutters">
-          <div class="col-lg-6 text-center">
-               <img src="assets/images/watch.png" class="head-watch" alt="watch"/>
-          </div>
-          <div class="col-lg-6 d-flex align-item-center justify-content-center flex-column">
-               <h2 class="head-title ml-5">We are connected</h2>
-               <p class="head-info ml-5 mr-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
-                    consequatur eaque
-                    earum ipsam itaque labore laborum laudantium magnam neque, nulla quidem sunt totam veniam
-                    voluptate
-                    voluptatibus? Illo minus nisi ullam.</p>
-               <a href="">
-                    <button class="head-button ml-5 mt-4">View More</button>
+               <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
                </a>
           </div>
-     </div>
-</section>
+     </header>
+     <!-- end header -->
 
-<!--block dial -->
-<section id="block-dial">
-     <h2 class="block-two-title text-center pt-4 pb-5">Choose Your Dial</h2>
-     <div class="container">
+     <section id="home-info">
+          <div class="container">
+               <ul class="home-info-select">
+                    <li class="home-info-list"><a href="">Nouveauté</a></li>
+                    <li class="home-info-list"><a href="">Marque</a></li>
+                    <li class="home-info-list"><a href="">Promotion</a></li>
+               </ul>
+          </div>
+     </section>
+
+     <section id="home-first">
           <div class="row no-gutters">
-               <div class="col-lg-3 col-md-6 text-center">
-                    <div class="block-circle">
-                         <img src="assets/images/download.png" alt="clock"/>
-                    </div>
+               <div class="col-lg-6 text-center">
+                    <img src="assets/images/watch.png" class="head-watch" alt="watch"/>
                </div>
-               <div class="col-lg-3 col-md-6 text-center">
-                    <div class="block-circle">
-                         <img src="assets/images/download-2.png" alt="clock"/>
-                    </div>
-               </div>
-               <div class="col-lg-3 col-md-6 text-center">
-                    <div class="block-circle">
-                         <img src="assets/images/download-3.png" alt="clock"/>
-                    </div>
-               </div>
-               <div class="col-lg-3 col-md-6 text-center">
-                    <div class="block-circle">
-                         <img src="assets/images/download-1.png" alt="clock"/>
-                    </div>
+               <div class="col-lg-6 d-flex align-item-center justify-content-center flex-column">
+                    <h2 class="head-title ml-5">We are connected</h2>
+                    <p class="head-info ml-5 mr-5">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
+                         consequatur eaque
+                         earum ipsam itaque labore laborum laudantium magnam neque, nulla quidem sunt totam veniam
+                         voluptate
+                         voluptatibus? Illo minus nisi ullam.</p>
+                    <a href="">
+                         <button class="head-button ml-5 mt-4">View More</button>
+                    </a>
                </div>
           </div>
-     </div>
-</section>
-<!-- end block dial -->
+     </section>
 
-<!--collection -->
-<section class="block-three d-flex justify-content-center align-items-center flex-column">
-     <h3 class="block-three-title  text-center pt-4">Watch Collection</h3>
-     <h2 class="collection-subtitle text-center">Tag Heure</h2>
-     <div class="row no-gutters">
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-               <img src="assets/images/watch-tag.png" class="home-model-watch" alt="watch tag-heuer"/>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-               <img src="assets/images/watch-tag2.png" class="home-model-watch" alt="watch tag-heuer"/>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-               <img src="assets/images/watch-tag3.png" class="home-model-watch" alt="watch tag-heuer"/>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-               <img src="assets/images/watch-tag4.png" class="home-model-watch" alt="watch tag-heuer"/>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-               <img src="assets/images/watch-tag5.png" class="home-model-watch" alt="watch tag-heuer"/>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-               <img src="assets/images/watch-tag3.png" class="home-model-watch" alt="watch tag-heuer"/>
-          </div>
-     </div>
-     <button class="three-button">View More</button>
-</section>
-
-<!--end collection-->
-
-
-<!-- parallax block -->
-<section id="block-parallax">
-     <div class="row no-gutters">
-          <div class="col-lg-6">
-               <div class="img-parallax-block"></div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-               <div class="b-para-img-two d-flex justify-content-center flex-column">
-                    <div class="row no-gutters">
-                         <div class="col-6"></div>
-                         <div class="col-6">
-                              <h2 class="prl-title mb-4">Men's watches</h2>
-                              <h3 class="prl-sub text-uppercase">smart watches <br> latest fashion statement</h3>
-                              <a href="">
-                                   <button class="head-button ml-5 mt-4">View More</button>
-                              </a>
+     <!--block dial -->
+     <section id="block-dial">
+          <h2 class="block-two-title text-center pt-4 pb-5">Choose Your Dial</h2>
+          <div class="container">
+               <div class="row no-gutters">
+                    <div class="col-lg-3 col-md-6 text-center">
+                         <div class="block-circle">
+                              <img src="assets/images/download.png" alt="clock"/>
+                         </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                         <div class="block-circle">
+                              <img src="assets/images/download-2.png" alt="clock"/>
+                         </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                         <div class="block-circle">
+                              <img src="assets/images/download-3.png" alt="clock"/>
+                         </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                         <div class="block-circle">
+                              <img src="assets/images/download-1.png" alt="clock"/>
                          </div>
                     </div>
                </div>
           </div>
-     </div>
-</section>
-<section id="block-four">
-     <div class="row no-gutters">
-          <div class="col-lg-6 col-md-6">
-               <div class="b-para-img d-flex  justify-content-center flex-column">
+     </section>
+     <!-- end block dial -->
+
+     <!--collection -->
+     <section class="block-three d-flex justify-content-center align-items-center flex-column">
+          <h3 class="block-three-title  text-center pt-4">Watch Collection</h3>
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+               <li class="nav-item three-item">
+                    <a  class="three-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                       aria-controls="pills-home" aria-selected="true">Tag-Heure</a>
+               </li>
+               <li class="nav-item three-item">
+                    <a  class="three-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                       aria-controls="pills-profile" aria-selected="false">Armani</a>
+               </li>
+               <li class="nav-item three-item">
+                    <a class="three-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                       aria-controls="pills-contact" aria-selected="false">Louis Vuitton</a>
+               </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
                     <div class="row no-gutters">
-                         <div class="col-6"></div>
-                         <div class="col-6">
-                              <h2 class="prl-title mb-4">Ladies' watches</h2>
-                              <h3 class="prl-sub text-uppercase">wear your style<br> with verve & attitude</h3>
-                              <a href="">
-                                   <button class="head-button ml-5 mt-4">View More</button>
-                              </a>
+
+
+                         <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                              <div class="grow">
+                                   <img src="assets/images/watch-tag.png" class="home-model-watch"
+                                        alt="watch tag-heuer"/>
+                              </div>
+                         </div>
+                         <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                              <div class="grow">
+                                   <img src="assets/images/watch-tag2.png" class="home-model-watch"
+                                        alt="watch tag-heuer"/>
+                              </div>
+                         </div>
+                         <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                              <div class="grow">
+                                   <img src="assets/images/watch-tag3.png" class="home-model-watch"
+                                        alt="watch tag-heuer"/>
+                              </div>
+                         </div>
+                         <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                              <div class="grow">
+                                   <img src="assets/images/watch-tag4.png" class="home-model-watch"
+                                        alt="watch tag-heuer"/>
+                              </div>
+                         </div>
+                         <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                              <div class="grow">
+                                   <img src="assets/images/watch-tag5.png" class="home-model-watch"
+                                        alt="watch tag-heuer"/>
+                              </div>
+                         </div>
+                         <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                              <div class="grow">
+                                   <img src="assets/images/watch-tag3.png" class="home-model-watch"
+                                        alt="watch tag-heuer"/>
+                              </div>
                          </div>
                     </div>
                </div>
+               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi magni neque nobis quidem?
+                    Adipisci alias corporis dolorem molestias quia saepe totam. Accusantium eum laudantium, minima
+                    officia perspiciatis sequi temporibus.
+               </div>
+               <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae commodi id ipsum labore modi officiis
+                    saepe. Aperiam corporis cupiditate debitis fuga, necessitatibus nulla optio pariatur quaerat quis
+                    recusandae? Dolor!
+               </div>
           </div>
-          <div class="col-lg-6">
-               <div class="img-parallax-two"></div>
-          </div>
-     </div>
-</section>
-<!--  end parallax block -->
-<section id="home-men-ad">
-     <h2 class="home-blog-title text-center pt-5">Latest News</h2>
-     <!--will replace by foreach php here-->
-     <div class="container">
+
+          <button class="three-button">View More</button>
+     </section>
+
+     <!--end collection-->
+
+
+     <!-- parallax block -->
+     <section id="block-parallax">
           <div class="row no-gutters">
-               <div class="col-lg-4 d-flex flex-column align-items-center">
-                    <div class="card" style="width: 18rem;">
-                         <img class="card-img-top" src="assets/images/news2.jpg" alt="Card image cap"/>
-                         <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the
-                                   bulk of
-                                   the card's content.
-                              </p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                         </div>
-                    </div>
+               <div class="col-lg-6">
+                    <div class="img-parallax-block"></div>
                </div>
-               <div class="col-lg-4 d-flex flex-column align-items-center">
-                    <div class="card" style="width: 18rem;">
-                         <img class="card-img-top" src="assets/images/news.jpg" alt="Card image cap"/>
-                         <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the
-                                   bulk
-                                   of the card's content.
-                              </p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                         </div>
-                    </div>
-               </div>
-               <div class="col-lg-4 d-flex flex-column align-items-center">
-                    <div class="card" style="width: 18rem;">
-                         <img class="card-img-top" src="assets/images/news3.jpg" alt="Card image cap"/>
-                         <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the
-                                   bulk
-                                   of the card's content.
-                              </p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+               <div class="col-lg-6 col-md-6">
+                    <div class="b-para-img-two d-flex justify-content-center flex-column">
+                         <div class="row no-gutters">
+                              <div class="col-6"></div>
+                              <div class="col-6">
+                                   <h2 class="prl-title mb-4">Men's watches</h2>
+                                   <h3 class="prl-sub text-uppercase">smart watches <br> latest fashion statement</h3>
+                                   <a href="">
+                                        <button class="head-button ml-5 mt-4">View More</button>
+                                   </a>
+                              </div>
                          </div>
                     </div>
                </div>
           </div>
-     </div>
-</section>
+     </section>
+     <section id="block-four">
+          <div class="row no-gutters">
+               <div class="col-lg-6 col-md-6">
+                    <div class="b-para-img d-flex  justify-content-center flex-column">
+                         <div class="row no-gutters">
+                              <div class="col-6"></div>
+                              <div class="col-6">
+                                   <h2 class="prl-title mb-4">Ladies' watches</h2>
+                                   <h3 class="prl-sub text-uppercase">wear your style<br> with verve & attitude</h3>
+                                   <a href="">
+                                        <button class="head-button ml-5 mt-4">View More</button>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-lg-6">
+                    <div class="img-parallax-two"></div>
+               </div>
+          </div>
+     </section>
+     <!--  end parallax block -->
+     <section id="home-men-ad">
+          <h2 class="home-blog-title text-center pt-5">Latest News</h2>
+          <!--will replace by foreach php here-->
+         <?php
 
-<!-- home newsletters -->
-<section id="home-news">
-     <h2 class="home-news-title text-center pt-4 text-uppercase">subscribe to our newsletter</h2>
-     <form action="index.php" class="text-center">
-          <label for="email">
-               <input type="email" name="email" id="email" class="home-news-ipt text-center" placeholder="E-mail"/>
-          </label>
-          <input type="submit" class="home-news-submit" value="Submit">
-     </form>
-</section>
+         $query = $db->query('SELECT * FROM blog');
 
+         ?>
+
+         <?php while ($blogContent = $query->fetch()): ?>
+          <div class="container">
+               <div class="row no-gutters">
+                    <div class="col-lg-4 d-flex flex-column align-items-center">
+                         <div class="card" style="width: 18rem;">
+                              <img class="card-img-top" src="assets/images/news2.jpg" alt="Card image cap"/>
+                              <div class="card-body">
+                                   <h5 class="card-title"><?php echo $blogContent['title']; ?></h5>
+                                   <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.
+                                   </p>
+                                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column align-items-center">
+                         <div class="card" style="width: 18rem;">
+                              <img class="card-img-top" src="assets/images/news.jpg" alt="Card image cap"/>
+                              <div class="card-body">
+                                   <h5 class="card-title"><?php echo $blogContent['title']; ?></h5>
+                                   <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.
+                                   </p>
+                                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column align-items-center">
+                         <div class="card" style="<?php echo $blogContent['title']; ?>">
+                              <img class="card-img-top" src="assets/images/news3.jpg" alt="Card image cap"/>
+                              <div class="card-body">
+                                   <h5 class="card-title"><?php echo $blogContent['title']; ?></h5>
+                                   <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.
+                                   </p>
+                                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+    <?php endwhile; ?>
+     <!-- home newsletters -->
+     <section id="home-news">
+          <h2 class="home-news-title text-center pt-4 text-uppercase">subscribe to our newsletter</h2>
+          <form action="index.php" class="text-center">
+               <label for="email">
+                    <input type="email" name="email" id="email" class="home-news-ipt text-center" placeholder="E-mail"/>
+               </label>
+               <input type="submit" class="home-news-submit" value="Submit">
+          </form>
+     </section>
+</main>
 <!-- end home newsletters -->
 
 <!-- footer-->
